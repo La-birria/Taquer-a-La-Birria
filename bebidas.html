@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bebidas.css"/>
+    <link rel="icon" href="imgs/icono.jpg" width="250px" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--encabezado de la página-->
+    <header>
+        <nav>
+            <ul class="li">
+                <li><a href="menú.html">←</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menú.html">Menú</a></li>
+                <li><a href="bebidas_tradicionales.html">Bevidas tradicionales</a></li>
+                <li><a href="fin.html">A serca de nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            <img src="imgs/icon carrito.png" width="20px"> <span id="total-price">0.00</span>
+        </div>
+    </header>
+
+    <!--primer contenedor de productos-->
+    <div class="productos">
+        <div class="producto">
+            <img src="imgs/Cocacola.jpg" alt="taco de res" width="140px">
+            <h3>Cocacola</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/cocalite.png" alt="taco de birria" width="140px">
+            <h3>Cocacola-lite</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/Fanta.jpg" alt="taco de birria" width="140px">
+            <h3>Fanta</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/pepsi.jpg" alt="taco de birria" width="140px">
+            <h3>Pepsi</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+    </div>
+
+     <!-- segundo contenedor de productos -->
+    <div class="productos">
+        <div class="producto">
+            <img src="imgs/pepsilite.jpg" alt="taco de birria" width="140px">
+            <h3>Pepsi-lite</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/Sprite.jpg" alt="taco de birria" width="140px">
+            <h3>Sprite</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/Tropical uva.jpg" alt="taco de birria" width="140px">
+            <h3>Tropical-uva</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/7up.png" alt="taco de birria" width="140px">
+            <h3>7up</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+    </div>
+
+    <div id="cart" class="cart hidden">
+        <h2>Carrito</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="clearCart()">Limpiar Carrito</button>
+    </div>
+
+<footer>
+    <p>© 2024 TacoTradición. Todos los derechos reservados.</p>
+</footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

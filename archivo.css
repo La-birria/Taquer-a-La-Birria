@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+  font-family: 'Ranchers', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url(imgs/Estructura.jpg);
+}
+
+header {
+  background-color: #ff911b;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sección Hero */
+.hero {
+  background: url(imgs/e77a9ac0c6cf71149dc78e7c48aa3f57\ \(1\).jpg); 
+  background-repeat: no-repeat;/* Color de fondo */
+  background-size:  100%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 50px 0;
+  font-size: 50px;
+  box-sizing: border-box;
+}
+
+/* Sección de características */
+.features {
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+.card ul {
+  padding: 0;
+}
+
+.card ul li {
+  margin: 10px 0;
+}
+
+.card1{
+  background-color: #ffb883;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Estilos para las imágenes */
+.contenedor7 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contenedor7 img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  margin: 10px;
+}
+.contenedor7 img{
+  border-radius: 14px;
+}
+
+.contenedor7 img:hover{
+  transform: scale(1.1); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4) ;
+  z-index: 1; 
+  transition: 0.5s;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #ff9b4f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries para

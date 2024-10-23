@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bebidas_tradicionales.css"/>
+    <link rel="icon" href="imgs/icono.jpg" width="250px" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <title>Bebidas</title>
+</head>
+<body>
+    <!--encabezado de la página-->
+    <header>
+        <nav>
+            <ul class="li">
+                <li><a href="bebidas.html">←</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menú.html">Menú</a></li>
+                <li><a href="fin.html">A serca de nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            <img src="imgs/icon carrito.png" width="20px"> <span id="total-price">0.00</span>
+        </div>
+    </header>
+
+    <!--primer contenedor de productos-->
+    <div class="productos">
+        <div class="producto">
+            <img src="imgs/Agua de jamaica.jpg" alt="taco de res" width="140px">
+            <h3>Agua de jamaica</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/Agua de limon.jpg" alt="taco de birria" width="140px" height="180px">
+            <h3>Agua de limon</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/Agua de mandarina.jpg" alt="taco de birria" width="140px" height="180px">
+            <h3>Agua de mandarina</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/agua de sandia.jpg" alt="taco de birria" width="140px">
+            <h3>Agua de sandia</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/agua de tamarindo.jpg" alt="taco de birria" width="140px" height="170px">
+            <h3>Agua de tamarindo</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+    </div>
+
+     <!-- segundo contenedor de productos -->
+    <div class="productos">
+        <div class="producto">
+            <img src="imgs/Orchata.jpg" alt="taco de birria" width="140px">
+            <h3>Horchata</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/Agua de naranja.jpg" alt="taco de birria" width="140px" height="140pxpx">
+            <h3>Agua de naranja</h3>
+            <p>Precio: $0.85/Por unidad</p>
+            <button onclick="addToCart(0.85)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/corona.jpg" alt="taco de birria" width="140px">
+            <h3>Corona</h3>
+            <p>Precio: $2.25/Por unidad</p>
+            <button onclick="addToCart(2.25)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/2xx.jpg" alt="taco de birria" width="140px">
+            <h3>Dos equis</h3>
+            <p>Precio: $1.50/Por unidad</p>
+            <button onclick="addToCart(1.50)">Agregar al carrito 🛒</button>
+        </div>
+
+        <div class="producto">
+            <img src="imgs/modelo.jpg" alt="taco de birria" width="140px">
+            <h3>Modelo</h3>
+            <p>Precio: $2.25/Por unidad</p>
+            <button onclick="addToCart(2.25)">Agregar al carrito 🛒</button>
+        </div>
+    </div>
+
+    <div id="cart" class="cart hidden">
+        <h2>Carrito</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="clearCart()">Limpiar Carrito</button>
+    </div>
+
+<footer>
+    <p>© 2024 TacoTradición. Todos los derechos reservados.</p>
+</footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

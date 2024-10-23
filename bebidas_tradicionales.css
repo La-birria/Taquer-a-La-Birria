@@ -1,0 +1,159 @@
+body {
+    font-family: "Ranchers", sans-serif;
+    background: url(imgs/Estructura.jpg);
+    border: solid #eacab0 1px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /**Estilo del header**/
+  header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #fda45a;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 2px;
+    position: relative;
+    padding-right: 20px;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 2px;
+  }
+  
+  /**Estilo del contenedor de productos**/
+  .productos {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .productos {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .producto {
+        width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+        margin: 10px 0; /* Espaciado entre productos */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos del menú */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado entre elementos del menú */
+    }
+}
+  
+  /**estilo y animación del boton de agregar al carrito **/
+  .productos button{
+    background-color: #f89143; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    border-radius: 5px;
+    padding: 2px 3px; 
+    cursor: pointer; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s, box-shadow 0.1s;
+    font-family: "Ranchers", sans-serif;
+    font-size: 16px;
+  }
+  
+  .productos button:active{
+  transform: translateY(2px); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /** estilo de la carta del producto**/
+  .producto img {
+  border-radius: 12px;
+  }
+  
+  .producto {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width:220px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #f5b175;
+    text-align: center;
+  }
+  
+  .producto:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4) ;
+    z-index: 1; 
+    transition: 0.5s;
+  }
+  
+  /*estilo de la ventana del carrito*/
+  .cart {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border: 2px solid #df782e;
+    background-color: rgb(255, 182, 130);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .cart-icon {
+    cursor: pointer;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  /**estilo del pie de página (footer)**/
+  footer {
+    background-color: #fe9430;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 1px ;
+    font-size: 25px;
+    border-radius: 14px;
+    background-size: auto;
+  }
+  
+  /*estilo del boton de la ventana del carrito*/
+  #cart button{
+  background-color: #fe7b16; 
+  color: rgb(0, 0, 0); 
+  border: none; 
+  border-radius: 2px;
+  padding: 1px 2px; 
+  cursor: pointer; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s, box-shadow 0.1s;
+  font-family: "Ranchers", sans-serif;
+  font-size: 14px;
+  }
+  
+  #cart button{
+  transform: translateY(2px); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  }
