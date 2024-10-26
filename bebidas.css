@@ -69,7 +69,7 @@ nav ul li a {
 /**estilo y animación del boton de agregar al carrito **/
 .productos button{
   background-color: #f98329; 
-  color: rgb(0, 0, 0); 
+  color:rgb(255, 255, 255); 
   border: none; 
   border-radius: 5px;
   padding: 2px 3px; 
